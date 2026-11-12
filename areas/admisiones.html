@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admisiones · AAC&amp;U 2026</title>
+<meta name="description" content="Admisiones: qué vimos en la 2026 AAC&amp;U Conference on AI and Higher Education, por qué le importa al área y recomendaciones.">
+<meta property="og:title" content="Admisiones · AAC&amp;U 2026">
+<meta property="og:description" content="Admisiones: qué vimos en la 2026 AAC&amp;U Conference on AI and Higher Education, por qué le importa al área y recomendaciones.">
+<meta property="og:type" content="website">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QL4SS1MNE"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3QL4SS1MNE');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Estilo LED: cabezote y héroe oscuros, Source Sans 3 + Source Serif 4, amarillo como acento, esquinas rectas. */
+:root{
+  --negro:#191916; --tinta:#1f1f1c; --gris-900:#333331; --gris-700:#595959; --gris-500:#73726d; --gris-300:#bab9b3;
+  --gris-200:#e0dfda; --gris-100:#f0efea; --fondo:#fcfcfa; --blanco:#ffffff; --amarillo:#ffe41e; --amarillo-osc:#e0b800; --amarillo-claro:#fff8cc;
+  --O:#5b4a8b; --O-bg:#efecf6; --F:#0b7310; --F-bg:#eaf4ea; --E:#a85a00; --E-bg:#fbefe0; --C:#1f5786; --C-bg:#e6eef6;
+  --sans:"Source Sans 3","Segoe UI",Arial,sans-serif; --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --ancho:1240px; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--negro)}
+a{color:var(--tinta);text-decoration-color:var(--amarillo-osc);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{background:var(--amarillo);text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--amarillo-osc);outline-offset:2px}
+.in{max-width:var(--ancho);margin:0 auto;padding-left:max(24px, env(safe-area-inset-left,0px));padding-right:max(24px, env(safe-area-inset-right,0px))}
+@media (max-width:600px){ .in{padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))} }
+h1,h2,h3,h4{font-family:var(--sans);text-wrap:balance;margin:0;line-height:1.2;color:var(--tinta)}
+h2{font-size:clamp(28px,3.2vw,34px);font-weight:400}
+h3{font-size:22px;font-weight:600}
+h4{font-size:18px;font-weight:600}
+p{margin:0}
+.etq{font-family:var(--sans);font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gris-500);font-weight:600;display:block}
+.saltar{position:absolute;left:-999px}
+.saltar:focus{left:16px;top:8px;z-index:50;background:var(--amarillo);padding:8px 12px}
+
+/* Cabezote */
+.cabezote{background:var(--negro);color:var(--fondo);position:sticky;top:env(safe-area-inset-top,0px);z-index:20;border-bottom:1px solid #2e2e2a}
+.cabezote .in{min-height:72px;display:flex;align-items:center;gap:24px}
+.marca{display:flex;align-items:center;gap:14px;color:var(--fondo);text-decoration:none;min-width:0}
+.marca:hover{background:none}
+.marca-logo{display:block;height:44px;width:auto;flex:none}
+.marca-t{font-family:var(--sans);font-size:18px;font-weight:400;padding-left:14px;border-left:1px solid #6b6a64;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{font-family:var(--sans);font-weight:600;font-size:16px;color:var(--fondo);text-decoration:none;padding:8px 12px;white-space:nowrap;letter-spacing:.01em}
+.menu a:hover,.menu a.on{background:none;box-shadow:inset 0 -3px 0 var(--amarillo)}
+@media (max-width:900px){ .cabezote .in{flex-wrap:wrap;gap:0 16px;padding-block:10px} .menu{margin-left:0;width:100%;margin-top:6px} .menu a{font-size:15px;padding:6px 10px 8px} .marca-t{font-size:16px} }
+@media (max-width:480px){ .marca-t{display:none} }
+
+/* Héroe */
+.heroe{background:var(--negro);color:var(--fondo)}
+.heroe .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:center;padding-block:56px}
+.heroe .etq{color:var(--gris-300)}
+.heroe h1{font-weight:300;font-size:clamp(34px,4.6vw,52px);line-height:1.12;color:var(--fondo);margin:10px 0 18px}
+.heroe .lead{font-size:19px;line-height:1.6;color:#ecebe6}
+.heroe .meta{font-family:var(--sans);font-size:15px;color:var(--gris-300);margin-top:18px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.cifras{display:grid;grid-template-columns:1fr 1fr;border:1px solid #3d3d38}
+.cifra{padding:20px 22px;border:1px solid #3d3d38;font-family:var(--sans)}
+.cifra b{display:block;font-weight:300;font-size:40px;line-height:1.1;color:var(--amarillo);font-variant-numeric:tabular-nums}
+.cifra span{font-size:15px;color:#d6d5cf;line-height:1.45;display:block;margin-top:6px}
+@media (max-width:860px){ .heroe .in{grid-template-columns:1fr;padding-block:40px} }
+
+/* Secciones */
+main section{padding-block:64px 8px}
+.cab-sec{border-top:1px solid var(--gris-200);padding-top:28px;margin-bottom:26px;max-width:72ch;display:grid;gap:10px}
+.cab-sec p{color:var(--gris-700)}
+
+.puntos{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:p;max-width:880px}
+.puntos li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 28px;padding:18px 0;border-bottom:1px solid var(--gris-200)}
+.puntos li strong{font-family:var(--sans);font-weight:600;font-size:18px;line-height:1.35}
+@media (max-width:640px){ .puntos li{grid-template-columns:1fr} }
+
+.nota{border-left:4px solid var(--amarillo-osc);background:var(--amarillo-claro);padding:16px 20px;margin:26px 0 0;max-width:880px}
+.nota h3,.nota h4{font-size:17px;margin-bottom:8px}
+.nota ul,.nota ol{margin:0;padding-left:20px;display:grid;gap:6px}
+
+/* Dimensiones */
+.dimnav{display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;border:1px solid var(--gris-200);background:var(--blanco);width:max-content;max-width:100%}
+.dimnav a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;font-family:var(--sans);font-weight:600;font-size:15px;text-decoration:none;border-right:1px solid var(--gris-200)}
+.dimnav a:last-child{border-right:0}
+.cuad{width:12px;height:12px;background:var(--c);flex:none;display:inline-block}
+.dim{margin-bottom:56px}
+.dim-cab{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:3px solid var(--c);padding-bottom:10px;margin-bottom:16px}
+.dim-cab h3{font-size:clamp(24px,2.6vw,30px);font-weight:400;display:flex;align-items:center;gap:12px}
+.dim-cab .ver{font-family:var(--sans);font-size:15px;font-weight:600}
+.dim .lead{max-width:72ch;font-size:18px;margin-bottom:20px}
+.hallazgos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.hallazgo{padding:18px 20px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);display:flex;flex-direction:column;gap:8px;min-width:0}
+.hallazgo p{font-size:16px}
+.hallazgo ul{margin:0;padding-left:18px;font-size:15.5px;color:var(--gris-900);display:grid;gap:4px}
+.fuente{font-family:var(--sans);font-size:14px;color:var(--gris-700);margin-top:auto;padding-top:8px}
+.fuente b{font-weight:600;color:var(--tinta)}
+
+/* Áreas */
+.pestanas{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--gris-300);margin-bottom:24px}
+.pestanas button{font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 16px;border:0;background:none;color:var(--gris-700);cursor:pointer;margin-bottom:-1px;border-bottom:3px solid transparent}
+.pestanas button:hover{color:var(--tinta)}
+.pestanas button[aria-selected="true"]{color:var(--tinta);border-bottom-color:var(--amarillo-osc)}
+.ficha{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px 40px}
+.ficha h3{grid-column:1/-1;font-size:28px;font-weight:400}
+.ficha .bloque{display:grid;gap:10px;align-content:start;min-width:0}
+.ficha ul{margin:0;padding-left:20px;display:grid;gap:10px;font-size:16.5px}
+.ficha .nota{margin:8px 0 0}
+@media (max-width:820px){ .ficha{grid-template-columns:1fr} }
+
+/* Sesiones */
+.filtros{display:grid;gap:12px;background:var(--blanco);border:1px solid var(--gris-200);padding:16px;margin-bottom:16px;font-family:var(--sans)}
+.fila{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fila .lbl{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-500);font-weight:600;min-width:120px}
+.filtros input[type=search]{flex:1 1 280px;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);border-radius:0}
+.filtros select{font:inherit;font-size:15px;padding:9px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);border-radius:0;max-width:100%}
+.chip{font:inherit;font-size:15px;padding:5px 12px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);cursor:pointer;display:inline-flex;align-items:center;gap:8px;border-radius:0}
+.chip:hover{border-color:var(--tinta)}
+.chip[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--fondo)}
+.chip[aria-pressed="true"] .n{color:var(--gris-300)}
+.chip .n{color:var(--gris-500);font-variant-numeric:tabular-nums}
+.limpiar{font:inherit;font-size:15px;background:none;border:0;color:var(--tinta);cursor:pointer;text-decoration:underline;text-decoration-color:var(--amarillo-osc);text-decoration-thickness:2px;text-underline-offset:3px;padding:4px}
+.conteo{font-family:var(--sans);font-size:16px;color:var(--gris-700);margin:8px 0}
+.conteo b{color:var(--tinta)}
+.dia{font-family:var(--sans);font-weight:300;font-size:30px;margin:34px 0 6px}
+.hora{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.02em;margin:18px 0 8px;font-variant-numeric:tabular-nums}
+.ses{background:var(--blanco);border:1px solid var(--gris-200);border-left:4px solid var(--c,var(--gris-300));padding:14px 16px;margin:8px 0;display:grid;gap:6px;min-width:0}
+.ses.blk{background:var(--gris-100)}
+.ses-sup{display:flex;gap:14px;justify-content:space-between;align-items:flex-start}
+.ses h4{font-size:18px;line-height:1.3}
+.ses .info{font-family:var(--sans);font-size:15px;color:var(--gris-700)}
+.ses .inst{font-family:var(--sans);font-size:15.5px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--sans)}
+.tag{font-size:13px;padding:1px 8px;background:var(--gris-100);color:var(--gris-700)}
+.tag.d{background:var(--cbg);color:var(--c);font-weight:600}
+.tag.p{background:none;border:1px solid var(--gris-300)}
+.tag.cu{background:none;border:1px solid var(--amarillo-osc);color:var(--tinta)}
+.mat{flex:none;font-family:var(--sans);font-size:13px;font-weight:600;padding:2px 9px;background:var(--amarillo);color:var(--negro);white-space:nowrap}
+.mat.no{background:var(--gris-100);color:var(--gris-700);font-weight:400}
+.ses details summary{cursor:pointer;font-family:var(--sans);font-size:15px;font-weight:600;width:max-content}
+.ses details p{white-space:pre-line;font-size:16px;margin-top:6px;max-width:80ch}
+.ses .lnk{font-family:var(--sans);font-size:14.5px;color:var(--gris-700);border-left:3px solid var(--amarillo-osc);padding-left:8px}
+.mas{display:block;margin:22px auto 0;font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 20px;border:1px solid var(--tinta);background:var(--blanco);color:var(--tinta);cursor:pointer}
+.mas:hover{background:var(--amarillo)}
+.vacio{padding:36px;text-align:center;color:var(--gris-700)}
+
+/* Recursos */
+.rec{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.rgrupo{padding:18px 20px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);min-width:0}
+.rgrupo h3{font-size:19px;margin-bottom:12px}
+.rgrupo ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.rgrupo li a{overflow-wrap:anywhere}
+.rgrupo li span{display:block;font-family:var(--sans);font-size:14px;color:var(--gris-500)}
+
+/* Método */
+.metodo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);margin-bottom:24px;background:var(--blanco)}
+.metodo div{padding:16px 18px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);font-family:var(--sans)}
+.metodo b{display:block;font-weight:300;font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.metodo span{font-size:15px;color:var(--gris-700)}
+.notas{max-width:72ch;display:grid;gap:10px}
+
+/* Pie */
+.pie{background:var(--negro);color:#d6d5cf;margin-top:72px;font-family:var(--sans);font-size:15px}
+.pie .in{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:28px;padding-block:40px 48px}
+.pie h2{font-family:var(--sans);font-size:20px;font-weight:600;color:var(--fondo);margin-bottom:8px}
+.pie .etq{color:var(--gris-300);margin-bottom:8px}
+.pie a{color:var(--fondo)}
+.pie a:hover{color:var(--negro)}
+.pie ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+@media (max-width:760px){ .pie .in{grid-template-columns:1fr} }
+
+/* Capas y páginas */
+.capa{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--negro);background:var(--amarillo);padding:3px 10px;margin-bottom:12px}
+.miga{font-family:var(--sans);font-size:15px;color:var(--gris-300);margin-bottom:14px}
+.miga a{color:var(--fondo)}
+.miga a:hover{color:var(--negro)}
+.heroe.corto .in{grid-template-columns:minmax(0,1fr);padding-block:44px}
+.heroe.corto h1{font-size:clamp(32px,4vw,46px);margin-bottom:12px}
+.rutas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.ruta{padding:22px 22px 24px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);display:flex;flex-direction:column;gap:10px;min-width:0}
+.ruta .capa{align-self:flex-start;margin:0}
+.ruta h3{font-size:22px;font-weight:400}
+.ruta p{font-size:16px;color:var(--gris-900)}
+.ruta ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-family:var(--sans);font-size:16px}
+.ruta .ir{margin-top:auto;font-family:var(--sans);font-weight:600}
+@media (max-width:900px){ .rutas{grid-template-columns:1fr} }
+.lista-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.lista-areas a{display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);text-decoration:none}
+.lista-areas a:hover{background:var(--amarillo-claro)}
+.lista-areas strong{font-family:var(--sans);font-size:20px;font-weight:600}
+.lista-areas span{font-size:15.5px;color:var(--gris-700)}
+.destacadas{display:grid;gap:0;border-top:1px solid var(--gris-200)}
+.dest{padding:16px 0;border-bottom:1px solid var(--gris-200);display:grid;gap:4px}
+.dest h4{font-size:18px}
+.dest .info{font-family:var(--sans);font-size:15px;color:var(--gris-700)}
+.dest .inst{font-family:var(--sans);font-size:15.5px;font-weight:600}
+.dest details summary{cursor:pointer;font-family:var(--sans);font-size:15px;font-weight:600;width:max-content}
+.dest details p{font-size:16px;margin-top:6px;max-width:80ch;white-space:pre-line}
+.boton{display:inline-block;font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 18px;border:1px solid var(--tinta);background:var(--blanco);text-decoration:none;margin-top:18px}
+.boton:hover{background:var(--amarillo)}
+.siguiente{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;border-top:1px solid var(--gris-200);padding-top:24px;font-family:var(--sans)}
+.siguiente a{text-decoration:none;padding:14px 16px;border:1px solid var(--gris-200);background:var(--blanco);display:grid;gap:2px}
+.siguiente a:hover{background:var(--amarillo-claro)}
+.siguiente small{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gris-500);font-weight:600}
+.siguiente .der{text-align:right}
+@media (max-width:640px){ .siguiente{grid-template-columns:1fr} .siguiente .der{text-align:left} }
+</style>
+
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabezote"><div class="in">
+<a class="marca" href="../index.html"><img class="marca-logo" src="../logo-led.png" alt="Laboratorio Educativo Digital, Universidad de los Andes" width="115" height="44"><span class="marca-t">AAC&amp;U 2026 · IA y educación superior</span></a>
+<nav class="menu" aria-label="Secciones"><a href="../index.html">Inicio</a><a href="../dimensiones.html">Dimensiones</a><a href="../areas/index.html" class="on" aria-current="page">Áreas</a><a href="../sesiones.html">Sesiones</a><a href="../recursos.html">Recursos</a></nav>
+</div></header>
+<div class="heroe corto"><div class="in"><div><div class="miga"><a href="../index.html">Inicio</a> / <a href="../areas/index.html">Áreas</a> / Admisiones</div><span class="capa">Capa 2 · Lectura de 5 minutos</span><span class="etq">Ficha por área</span>
+<h1>Admisiones</h1><p class="lead">Cómo forma Uniandes en IA ya es parte de la propuesta de valor para aspirantes y familias. Además, cualquier IA que intervenga en decisiones de admisión necesita reglas explícitas y revisión humana.</p></div></div></div>
+<main id="contenido">
+<section class="in"><div class="ficha">
+<div class="bloque"><span class="etq">Qué vimos</span><ul><li>Las familias ya preguntan «¿cuál es su enfoque de IA?», pensando en cómo se prepara su hijo para el empleo (William &amp; Mary).</li><li>Algunas universidades usan entrevistas orales con IA para verificar la autoría de las solicitudes, y ya existen herramientas que dan respuestas ocultas durante esas entrevistas (California Institute of Technology).</li><li>Los aspirantes llegan con experiencias muy dispares: el 92 % ya usó IA y el 44 % aprendió por su cuenta. Algunas universidades dan un curso o un video de inducción a todos los nuevos (Miami University, Georgia Southern University).</li><li>El 81,2 % de 165 universidades auditadas usa IA en admisiones o predicción de matrícula, y la mayoría no lo menciona en sus políticas. Hay agentes que revisan las páginas públicas en busca de información contradictoria (Metropolitan State University of Denver).</li></ul></div>
+<div class="bloque"><span class="etq">Por qué le importa al área</span><p>Cómo forma Uniandes en IA ya es parte de la propuesta de valor para aspirantes y familias. Además, cualquier IA que intervenga en decisiones de admisión necesita reglas explícitas y revisión humana.</p>
+<div class="nota"><h4>Recomendaciones</h4><ol><li>Escribir un mensaje claro para aspirantes y familias sobre cómo forma Uniandes en IA, probándolo con la pregunta «¿sonaría bien en un recorrido por el campus?».</li><li>Inventariar cualquier uso de IA en el proceso de admisión, con revisión humana y transparencia hacia los aspirantes.</li><li>Sumar a Admisiones a las conversaciones institucionales sobre IA generativa.</li></ol></div></div></div></section>
+<section class="in"><div class="cab-sec"><span class="etq">Para ir más a fondo</span><h2>Sesiones destacadas para Admisiones</h2><p>Una selección de 10 de las 11 sesiones relacionadas con esta área. Se priorizan las que tienen materiales publicados por sus ponentes.</p></div>
+<div class="destacadas"><div class="dest"><h4>Twice Disrupted: Understanding and Serving the Class of 2030</h4><div class="info">Miércoles 28 de octubre · 12:30 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">The City University of New York, LaGuardia Community College · Connecticut College</div><details><summary>Descripción</summary><p>This interactive, hands-on workshop explores how institutions can assess and strengthen their readiness to serve a student cohort uniquely shaped by COVID-19 and generative AI. Participants will consider both the risks of under-preparation and the opportunities created by intentional, coordinated responses. Drawing on current insights into generational disruption and student development, the workshop examines the evolving landscape of student needs, including belonging, academic resilience and integrity, and digital fluency, with a focus on cross-functional strategies that support institutional retention and completion goals. 
+ Participants will explore how campus roles—including faculty, advisors, student affairs professionals, and administrators—can be leveraged in alignment with shared institutional priorities to support student success and persistence. Through guided discussions and applied examples, participants will develop concrete, actionable strategies for building campus-wide readiness that strengthens student outcomes, enhances cross-functional collaboration, and responds to shifting enrollment realities. Digital Devices are required - tablets and laptops preferred.</p></details></div><div class="dest"><h4>From Prospect to Price: AI Policies and Ethics in Admissions, Recruitment, and Enrollment Management</h4><div class="info">Miércoles 28 de octubre · 5:00 PM</div>
+<div class="inst">State University of New York (SUNY) · Student Defense · Strada Education Foundation · University of North Carolina</div><details><summary>Descripción</summary><p>As AI becomes embedded in admissions, recruitment, tuition discounting, financial aid, and enrollment management, institutions must confront a core governance challenge: how to ensure these tools align with commitments to transparency, equity, and accountability. Predictive analytics, application screening tools, and AI-driven recruitment and pricing systems are increasingly shaping access to higher education—but often without clear oversight or shared standards. 
+ This panel brings together experts in legal policy, institutional governance, and advocacy to examine how colleges and universities can responsibly govern AI across the enrollment lifecycle. Panelists will explore risks including algorithmic bias, opaque decision-making, and consumer protections, alongside emerging approaches to data stewardship and institutional oversight. 
+ Grounded in practice and policy, the session will highlight governance frameworks, ethical responsibilities, and accountability mechanisms that institutions can adopt to ensure AI systems reflect institutional values and legal obligations. Attendees will gain concrete approaches to building transparent, equitable, and ethically grounded AI governance frameworks and policies in admissions and enrollment management. This panel will include discussion on vendor vetting, internal institutional controls, and guidance for ethical and responsible AI tool use.</p></details></div><div class="dest"><h4>AI and Higher Ed from 30,000ft</h4><div class="info">Miércoles 28 de octubre · 7:30 PM</div>
+<div class="inst">Emerson College</div><details><summary>Descripción</summary><p>&quot;AI and Higher Ed from 30,000ft&quot; aims to take an expansive view at the potential long-term impact of the various forms of AI on the higher education sector as a whole. The history of higher education in the United States is one of adaptation over its 400-year history, and individual institutions can change more rapidly than one might think. Current external stressors (e.g., the demographic cliff and changes in the federal government&#x27;s approach to funding) have challenged institutions to react quickly enough to stem the loss of students. Add to that mix the accelerant of AI, and it&#x27;s not difficult to clearly see the current crisis impacting the sector. Of course, in crisis we see opportunity: this session asks participants to imagine the future in 10, 20, and 30 years. What will happen to small liberal arts colleges; to huge, mostly online institutions; to large state universities; and to two-year regional institutions? Which struggle, which thrive? Most importantly, how do they adapt? Whither higher ed itself?</p></details></div><div class="dest"><h4>Harnessing AI to Transform Transfer and Learning Mobility in Texas</h4><div class="info">Jueves 29 de octubre · 2:15 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Educate Texas · Sova · The Texas A&amp;M University System · CourseWise | Equivalence Systems</div><details><summary>Descripción</summary><p>The Texas Transfer Alliance (TTA), hosted by Educate Tex as (EDTX), is a statewide, cross-sector collaboration designed to achieve student success through improvements in credit mobility, academic transfer, and credentialing. The TTA is taking critical steps to build a tech-enabled learning mobility ecosystem. In this session, we will share the essential building blocks of the TTA’s approach and lessons learned as it works in partnership with the AI Transfer and Articulation Infrastructure Network (ATAIN), a national leader in developing AI tools to advance credit mobility and the Texas Common Course Numbering System (TCCNS), a critical statewide data asset that houses course equivalencies across Texas institutions. 
+ Together, this partnership is taking a systemic approach to supporting credit mobility through advancements in AI. Through the TTA, Texas higher education institutions are joining ATAIN and implementing its software platform that uses AI to make course equivalency recommendations and improve institutional workflows, leading to dramatically improved scale, efficiency, and accuracy of transcript credit evaluation and applicability decisions. The project is also creating spaces for cross-institutional sharing, to inform Texas policymakers, and to improve state data infrastructure. The ultimate goal is to center learners so they can access optimal pathways to economic mobility by leveraging all their documented learnin g.</p></details></div><div class="dest"><h4>Bridging the Operational Void</h4><div class="info">Jueves 29 de octubre · 4:00 PM · 2 materiales (solicite acceso a SharePoint)</div>
+<div class="inst">University of Niagra falls</div><details><summary>Descripción</summary><p>Today , institutions of higher education are regulating how students use AI by drafting codes of conduct, redesigning assessments, and deploying plagiarism detection tools. Most of these institutions are using tools based on AI algorithms to make high-stakes decisions about admissions, financial aid, and flagging academic risk, with almost no accountability mechanisms in place. 
+ This session will present findings from an empirical audit of 165 universities across 15+ countries, which reveals the double standards in governing student-facing AI systems and institutional AI systems. 81.2 percent of institutions use operational AI for admissions or enrollment prediction, yet 73.9 percent of formal governance policies are entirely silent on these systems. Only 30.3 percent of operational documentation references bias mitigation. 
+ Drawing on the Decoupled Sociotechnical Agency (DSA) framework, this session explains why this void exists, addressing organizational silos, gaps between policies and actual practice, and delays in keeping up with technology and what institutions can do to close it. With enforcement of the EU AI Act underway and GDPR rights already in force, the legal and reputational stakes are no longer theoretical. The audience will leave with the AI Governance Capability Stack™, a practical framework for transitioning from reactive compliance to proactive, ethics-by-design governance of operational AI.</p></details></div><div class="dest"><h4>Fits and Dreams: Realigning Higher Education for Student–Institution Fit Using AI-Assisted Diagnostics</h4><div class="info">Jueves 29 de octubre · 4:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Western New England University · Bay Path University</div><details><summary>Descripción</summary><p>Higher education faces growing evidence of misalignment between students and institutions. Rising dropout rates, transfers, and graduate underemployment suggest that many students enroll in institutions poorly matched to their academic and developmental readiness and vocational goals. At the same time, institutions often market broad promises of transformation while differing widely in mission, resources, and outcomes. The result is a system where students and institutions struggle to evaluate fit before costly decisions are made. 
+ We introduce a framework for improving student-institution fit through two diagnostic models: the Student Viability Matrix and the Institutional Viability Matrix. The Student Matrix evaluates students along two dimensions—academic readiness and developmental readiness—revealing distinct student archetypes that benefit from different educational environments. The Institutional Matrix examines how colleges align their missions, resources, and learning models with the populations they serve. 
+ Participants will explore how AI-assisted diagnostic and advising tools can support this process by helping students evaluate their strengths, goals, and readiness while enabling institutions to clarify their institutional identity. Through interactive demonstrations and discussion we will examine how AI tools could augment advising, admissions, and institutional self-assessment to improve student-institution fit and strengthen the long-term value of higher education.</p></details></div><div class="dest"><h4>Before the First Day: A Pre-Matriculation Model for Student AI Literacy and Academic Integrity</h4><div class="info">Jueves 29 de octubre · 5:00 PM</div>
+<div class="inst">William &amp; Mary | Writing and Communication Center · William &amp; Mary | Studio for Teaching &amp; Learning Innovation</div><details><summary>Descripción</summary><p>Incoming students arrive on campus with widely uneven experiences using AI and even less preparation for navigating the ethical complexities of academic integrity in AI-integrated learning environments. This session introduces The Student&#x27;s Guide to AI , a pre-matriculation model designed to establish an institution-wide foundation for responsible AI use before students ever enter a classroom. Participants will explore how this asynchronous course engages incoming students in developing AI literacy, examining ethical and responsible use, and building a personalized decision-making framework tailored to their own values and goals. Rather than centering compliance and detection, the model reframes academic integrity as informed, context-sensitive judgment, cultivating learner agency from day one. Attendees will tour the course, review sample student artifacts, and use a structured template to reflect on how this approach might be adapted for their own institutional contexts. Participants will leave with a concrete implementation framework and strategies for building proactive AI literacy support across their institutions.</p></details></div><div class="dest"><h4>From Device‑Literate to Computer‑Ready: Designing a Digital Essentials Program That Bridges Incoming Student Skill Gaps</h4><div class="info">Jueves 29 de octubre · 5:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Providence College</div><details><summary>Descripción</summary><p>Incoming college students are often described as “ tech ‑ savvy ,” yet many arrive with limited foundational computer literacy. While they are fluent with smartphones, apps, and Chromebooks, they frequently struggle with file management, cloud storage, productivity software, and the digital workflows required for academic and professional success. This gap creates unnecessary friction for students and consumes valuable instructional time for faculty. 
+ This session introduces Providence College’s Digital Essentials Program, a scalable, modular initiative designed to bridge these gaps early by moving students from device familiarity to true computer and digital fluency. Developed in direct response to faculty ‑ identified challenges, the program addresses core competencies such as file organization, cloud collaboration, Microsoft 365 proficiency , responsible AI use, cybersecurity fundamentals, and digital preparedness for business coursework. Delivered through structured, self ‑ paced modules embedded in Canvas , Digital Essentials frees up class time, reduces student stress, and establishes a shared baseline of digital competence across courses. 
+ Participants will leave with a replicable framework—including curriculum structure, integration strategies, and implementation lessons—that can be adapted for incoming students at peer institutions.</p></details></div><div class="dest"><h4>Beyond the Bot: Bringing the Human Element to AI-Powered Marketing and Communications</h4><div class="info">Viernes 30 de octubre · 10:00 AM · 2 materiales (solicite acceso a SharePoint)</div>
+<div class="inst">AAC&amp;U</div><details><summary>Descripción</summary><p>As generative AI tools become more widely adopted across higher education, marketing and communications teams are navigating new opportunities alongside new challenges. AI can accelerate brainstorming, drafting, and content repurposing, but speed does not automatically lead to meaningful engagement. As audiences become more familiar with AI-generated content, institutions risk producing communications that feel generic, misaligned, or disconnected from their voice and values. This session explores how higher education communications teams can use AI strategically while maintaining authenticity, institutional identity, and human judgment. Presenters will share practical approaches for designing prompts that reflect institutional mission, audience needs, and strategic priorities, along with methods for critically evaluating and refining AI-generated outputs. Through examples drawn from higher education marketing and communications work, participants will learn how to move beyond generic outputs and integrate AI into their workflows in ways that strengthen efficiency without sacrificing trust, resonance, or institutional distinctiveness.</p></details></div><div class="dest"><h4>Beyond Scoring: Responsible and Practical AI Use in Admissions</h4><div class="info">Viernes 30 de octubre · 11:00 AM</div>
+<div class="inst">Baylor University</div><details><summary>Descripción</summary><p>As AI becomes part of the higher education landscape, the question is not whether institutions will use it; it is how to use it responsibly without losing what matters most about students. Many higher education professionals feel both pressure and uncertainty as AI becomes more ubiquitous, and they now face a growing tension: AI may improve efficiency and help surface patterns, but responsibility for interpretation and decision-making remains uniquely human. 
+ This session explores a practical question: if AI should never be used to score or admit a student, where can it still provide meaningful support? Using publicly available personal statements and other narrative materials as case examples, the session examines how AI can be used in bounded, human-centered ways. It considers how AI may help surface themes related to student strengths, context, fit, belonging, and possible support needs without reducing students to scores, labels, or automated judgments. Participants will consider practical use cases, compare two workflow directions for AI-supported holistic review, and reflect on risks including bias, privacy concerns, overinterpretation, false completeness, and overreliance. Attendees will leave with practical use cases, workflow options, and guardrails they can adapt in their own institutional contexts to keep AI in a bounded support role, protect human judgment, preserve human responsibility, and sustain trust with students and families.</p></details></div></div>
+<a class="boton" href="../sesiones.html?area=admisiones">Ver las 11 sesiones relacionadas con Admisiones</a>
+<div class="nota gris" style="border-left-color:var(--gris-500);background:var(--gris-100)"><p>¿Quiere el panorama general? Lea el <a href="../index.html">resumen de 2 minutos</a> o <a href="../dimensiones.html">las cuatro dimensiones</a>.</p></div>
+<nav class="siguiente" aria-label="Continuar leyendo"><a href="continua.html"><small>Anterior</small>Educación Continua</a><a class="der" href="trayectoria.html"><small>Siguiente</small>Trayectoria profesional</a></nav></section></main>
+<footer class="pie"><div class="in">
+<div><h2>2026 AAC&amp;U Conference on AI and Higher Education</h2><p>Síntesis del Laboratorio Educativo Digital (LED). Vicerrectoría Académica, Universidad de los Andes. Preparada con apoyo de Claude.</p></div>
+<div><span class="etq">Secciones</span><ul><li><a href="../index.html">Inicio</a></li><li><a href="../dimensiones.html">Dimensiones</a></li><li><a href="../areas/index.html">Áreas</a></li><li><a href="../sesiones.html">Sesiones</a></li><li><a href="../recursos.html">Recursos</a></li></ul></div>
+<div><span class="etq">Actualización</span><p>Contenido con corte al 10 de noviembre de 2026. Incluye los materiales publicados por los ponentes después de la conferencia.</p></div>
+</div></footer>
+
+</body>
+</html>

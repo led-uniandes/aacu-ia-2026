@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Decanatura de Estudiantes · AAC&amp;U 2026</title>
+<meta name="description" content="Decanatura de Estudiantes: qué vimos en la 2026 AAC&amp;U Conference on AI and Higher Education, por qué le importa al área y recomendaciones.">
+<meta property="og:title" content="Decanatura de Estudiantes · AAC&amp;U 2026">
+<meta property="og:description" content="Decanatura de Estudiantes: qué vimos en la 2026 AAC&amp;U Conference on AI and Higher Education, por qué le importa al área y recomendaciones.">
+<meta property="og:type" content="website">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QL4SS1MNE"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3QL4SS1MNE');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Estilo LED: cabezote y héroe oscuros, Source Sans 3 + Source Serif 4, amarillo como acento, esquinas rectas. */
+:root{
+  --negro:#191916; --tinta:#1f1f1c; --gris-900:#333331; --gris-700:#595959; --gris-500:#73726d; --gris-300:#bab9b3;
+  --gris-200:#e0dfda; --gris-100:#f0efea; --fondo:#fcfcfa; --blanco:#ffffff; --amarillo:#ffe41e; --amarillo-osc:#e0b800; --amarillo-claro:#fff8cc;
+  --O:#5b4a8b; --O-bg:#efecf6; --F:#0b7310; --F-bg:#eaf4ea; --E:#a85a00; --E-bg:#fbefe0; --C:#1f5786; --C-bg:#e6eef6;
+  --sans:"Source Sans 3","Segoe UI",Arial,sans-serif; --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --ancho:1240px; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--negro)}
+a{color:var(--tinta);text-decoration-color:var(--amarillo-osc);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{background:var(--amarillo);text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--amarillo-osc);outline-offset:2px}
+.in{max-width:var(--ancho);margin:0 auto;padding-left:max(24px, env(safe-area-inset-left,0px));padding-right:max(24px, env(safe-area-inset-right,0px))}
+@media (max-width:600px){ .in{padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))} }
+h1,h2,h3,h4{font-family:var(--sans);text-wrap:balance;margin:0;line-height:1.2;color:var(--tinta)}
+h2{font-size:clamp(28px,3.2vw,34px);font-weight:400}
+h3{font-size:22px;font-weight:600}
+h4{font-size:18px;font-weight:600}
+p{margin:0}
+.etq{font-family:var(--sans);font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gris-500);font-weight:600;display:block}
+.saltar{position:absolute;left:-999px}
+.saltar:focus{left:16px;top:8px;z-index:50;background:var(--amarillo);padding:8px 12px}
+
+/* Cabezote */
+.cabezote{background:var(--negro);color:var(--fondo);position:sticky;top:env(safe-area-inset-top,0px);z-index:20;border-bottom:1px solid #2e2e2a}
+.cabezote .in{min-height:72px;display:flex;align-items:center;gap:24px}
+.marca{display:flex;align-items:center;gap:14px;color:var(--fondo);text-decoration:none;min-width:0}
+.marca:hover{background:none}
+.marca-logo{display:block;height:44px;width:auto;flex:none}
+.marca-t{font-family:var(--sans);font-size:18px;font-weight:400;padding-left:14px;border-left:1px solid #6b6a64;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{font-family:var(--sans);font-weight:600;font-size:16px;color:var(--fondo);text-decoration:none;padding:8px 12px;white-space:nowrap;letter-spacing:.01em}
+.menu a:hover,.menu a.on{background:none;box-shadow:inset 0 -3px 0 var(--amarillo)}
+@media (max-width:900px){ .cabezote .in{flex-wrap:wrap;gap:0 16px;padding-block:10px} .menu{margin-left:0;width:100%;margin-top:6px} .menu a{font-size:15px;padding:6px 10px 8px} .marca-t{font-size:16px} }
+@media (max-width:480px){ .marca-t{display:none} }
+
+/* Héroe */
+.heroe{background:var(--negro);color:var(--fondo)}
+.heroe .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:center;padding-block:56px}
+.heroe .etq{color:var(--gris-300)}
+.heroe h1{font-weight:300;font-size:clamp(34px,4.6vw,52px);line-height:1.12;color:var(--fondo);margin:10px 0 18px}
+.heroe .lead{font-size:19px;line-height:1.6;color:#ecebe6}
+.heroe .meta{font-family:var(--sans);font-size:15px;color:var(--gris-300);margin-top:18px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.cifras{display:grid;grid-template-columns:1fr 1fr;border:1px solid #3d3d38}
+.cifra{padding:20px 22px;border:1px solid #3d3d38;font-family:var(--sans)}
+.cifra b{display:block;font-weight:300;font-size:40px;line-height:1.1;color:var(--amarillo);font-variant-numeric:tabular-nums}
+.cifra span{font-size:15px;color:#d6d5cf;line-height:1.45;display:block;margin-top:6px}
+@media (max-width:860px){ .heroe .in{grid-template-columns:1fr;padding-block:40px} }
+
+/* Secciones */
+main section{padding-block:64px 8px}
+.cab-sec{border-top:1px solid var(--gris-200);padding-top:28px;margin-bottom:26px;max-width:72ch;display:grid;gap:10px}
+.cab-sec p{color:var(--gris-700)}
+
+.puntos{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:p;max-width:880px}
+.puntos li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 28px;padding:18px 0;border-bottom:1px solid var(--gris-200)}
+.puntos li strong{font-family:var(--sans);font-weight:600;font-size:18px;line-height:1.35}
+@media (max-width:640px){ .puntos li{grid-template-columns:1fr} }
+
+.nota{border-left:4px solid var(--amarillo-osc);background:var(--amarillo-claro);padding:16px 20px;margin:26px 0 0;max-width:880px}
+.nota h3,.nota h4{font-size:17px;margin-bottom:8px}
+.nota ul,.nota ol{margin:0;padding-left:20px;display:grid;gap:6px}
+
+/* Dimensiones */
+.dimnav{display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;border:1px solid var(--gris-200);background:var(--blanco);width:max-content;max-width:100%}
+.dimnav a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;font-family:var(--sans);font-weight:600;font-size:15px;text-decoration:none;border-right:1px solid var(--gris-200)}
+.dimnav a:last-child{border-right:0}
+.cuad{width:12px;height:12px;background:var(--c);flex:none;display:inline-block}
+.dim{margin-bottom:56px}
+.dim-cab{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:3px solid var(--c);padding-bottom:10px;margin-bottom:16px}
+.dim-cab h3{font-size:clamp(24px,2.6vw,30px);font-weight:400;display:flex;align-items:center;gap:12px}
+.dim-cab .ver{font-family:var(--sans);font-size:15px;font-weight:600}
+.dim .lead{max-width:72ch;font-size:18px;margin-bottom:20px}
+.hallazgos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.hallazgo{padding:18px 20px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);display:flex;flex-direction:column;gap:8px;min-width:0}
+.hallazgo p{font-size:16px}
+.hallazgo ul{margin:0;padding-left:18px;font-size:15.5px;color:var(--gris-900);display:grid;gap:4px}
+.fuente{font-family:var(--sans);font-size:14px;color:var(--gris-700);margin-top:auto;padding-top:8px}
+.fuente b{font-weight:600;color:var(--tinta)}
+
+/* Áreas */
+.pestanas{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--gris-300);margin-bottom:24px}
+.pestanas button{font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 16px;border:0;background:none;color:var(--gris-700);cursor:pointer;margin-bottom:-1px;border-bottom:3px solid transparent}
+.pestanas button:hover{color:var(--tinta)}
+.pestanas button[aria-selected="true"]{color:var(--tinta);border-bottom-color:var(--amarillo-osc)}
+.ficha{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px 40px}
+.ficha h3{grid-column:1/-1;font-size:28px;font-weight:400}
+.ficha .bloque{display:grid;gap:10px;align-content:start;min-width:0}
+.ficha ul{margin:0;padding-left:20px;display:grid;gap:10px;font-size:16.5px}
+.ficha .nota{margin:8px 0 0}
+@media (max-width:820px){ .ficha{grid-template-columns:1fr} }
+
+/* Sesiones */
+.filtros{display:grid;gap:12px;background:var(--blanco);border:1px solid var(--gris-200);padding:16px;margin-bottom:16px;font-family:var(--sans)}
+.fila{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fila .lbl{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-500);font-weight:600;min-width:120px}
+.filtros input[type=search]{flex:1 1 280px;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);border-radius:0}
+.filtros select{font:inherit;font-size:15px;padding:9px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);border-radius:0;max-width:100%}
+.chip{font:inherit;font-size:15px;padding:5px 12px;border:1px solid var(--gris-300);background:var(--fondo);color:var(--tinta);cursor:pointer;display:inline-flex;align-items:center;gap:8px;border-radius:0}
+.chip:hover{border-color:var(--tinta)}
+.chip[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--fondo)}
+.chip[aria-pressed="true"] .n{color:var(--gris-300)}
+.chip .n{color:var(--gris-500);font-variant-numeric:tabular-nums}
+.limpiar{font:inherit;font-size:15px;background:none;border:0;color:var(--tinta);cursor:pointer;text-decoration:underline;text-decoration-color:var(--amarillo-osc);text-decoration-thickness:2px;text-underline-offset:3px;padding:4px}
+.conteo{font-family:var(--sans);font-size:16px;color:var(--gris-700);margin:8px 0}
+.conteo b{color:var(--tinta)}
+.dia{font-family:var(--sans);font-weight:300;font-size:30px;margin:34px 0 6px}
+.hora{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.02em;margin:18px 0 8px;font-variant-numeric:tabular-nums}
+.ses{background:var(--blanco);border:1px solid var(--gris-200);border-left:4px solid var(--c,var(--gris-300));padding:14px 16px;margin:8px 0;display:grid;gap:6px;min-width:0}
+.ses.blk{background:var(--gris-100)}
+.ses-sup{display:flex;gap:14px;justify-content:space-between;align-items:flex-start}
+.ses h4{font-size:18px;line-height:1.3}
+.ses .info{font-family:var(--sans);font-size:15px;color:var(--gris-700)}
+.ses .inst{font-family:var(--sans);font-size:15.5px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--sans)}
+.tag{font-size:13px;padding:1px 8px;background:var(--gris-100);color:var(--gris-700)}
+.tag.d{background:var(--cbg);color:var(--c);font-weight:600}
+.tag.p{background:none;border:1px solid var(--gris-300)}
+.tag.cu{background:none;border:1px solid var(--amarillo-osc);color:var(--tinta)}
+.mat{flex:none;font-family:var(--sans);font-size:13px;font-weight:600;padding:2px 9px;background:var(--amarillo);color:var(--negro);white-space:nowrap}
+.mat.no{background:var(--gris-100);color:var(--gris-700);font-weight:400}
+.ses details summary{cursor:pointer;font-family:var(--sans);font-size:15px;font-weight:600;width:max-content}
+.ses details p{white-space:pre-line;font-size:16px;margin-top:6px;max-width:80ch}
+.ses .lnk{font-family:var(--sans);font-size:14.5px;color:var(--gris-700);border-left:3px solid var(--amarillo-osc);padding-left:8px}
+.mas{display:block;margin:22px auto 0;font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 20px;border:1px solid var(--tinta);background:var(--blanco);color:var(--tinta);cursor:pointer}
+.mas:hover{background:var(--amarillo)}
+.vacio{padding:36px;text-align:center;color:var(--gris-700)}
+
+/* Recursos */
+.rec{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.rgrupo{padding:18px 20px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);min-width:0}
+.rgrupo h3{font-size:19px;margin-bottom:12px}
+.rgrupo ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.rgrupo li a{overflow-wrap:anywhere}
+.rgrupo li span{display:block;font-family:var(--sans);font-size:14px;color:var(--gris-500)}
+
+/* Método */
+.metodo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);margin-bottom:24px;background:var(--blanco)}
+.metodo div{padding:16px 18px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);font-family:var(--sans)}
+.metodo b{display:block;font-weight:300;font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.metodo span{font-size:15px;color:var(--gris-700)}
+.notas{max-width:72ch;display:grid;gap:10px}
+
+/* Pie */
+.pie{background:var(--negro);color:#d6d5cf;margin-top:72px;font-family:var(--sans);font-size:15px}
+.pie .in{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:28px;padding-block:40px 48px}
+.pie h2{font-family:var(--sans);font-size:20px;font-weight:600;color:var(--fondo);margin-bottom:8px}
+.pie .etq{color:var(--gris-300);margin-bottom:8px}
+.pie a{color:var(--fondo)}
+.pie a:hover{color:var(--negro)}
+.pie ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+@media (max-width:760px){ .pie .in{grid-template-columns:1fr} }
+
+/* Capas y páginas */
+.capa{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--negro);background:var(--amarillo);padding:3px 10px;margin-bottom:12px}
+.miga{font-family:var(--sans);font-size:15px;color:var(--gris-300);margin-bottom:14px}
+.miga a{color:var(--fondo)}
+.miga a:hover{color:var(--negro)}
+.heroe.corto .in{grid-template-columns:minmax(0,1fr);padding-block:44px}
+.heroe.corto h1{font-size:clamp(32px,4vw,46px);margin-bottom:12px}
+.rutas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.ruta{padding:22px 22px 24px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);display:flex;flex-direction:column;gap:10px;min-width:0}
+.ruta .capa{align-self:flex-start;margin:0}
+.ruta h3{font-size:22px;font-weight:400}
+.ruta p{font-size:16px;color:var(--gris-900)}
+.ruta ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-family:var(--sans);font-size:16px}
+.ruta .ir{margin-top:auto;font-family:var(--sans);font-weight:600}
+@media (max-width:900px){ .rutas{grid-template-columns:1fr} }
+.lista-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));border-top:1px solid var(--gris-200);border-left:1px solid var(--gris-200);background:var(--blanco)}
+.lista-areas a{display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-right:1px solid var(--gris-200);border-bottom:1px solid var(--gris-200);text-decoration:none}
+.lista-areas a:hover{background:var(--amarillo-claro)}
+.lista-areas strong{font-family:var(--sans);font-size:20px;font-weight:600}
+.lista-areas span{font-size:15.5px;color:var(--gris-700)}
+.destacadas{display:grid;gap:0;border-top:1px solid var(--gris-200)}
+.dest{padding:16px 0;border-bottom:1px solid var(--gris-200);display:grid;gap:4px}
+.dest h4{font-size:18px}
+.dest .info{font-family:var(--sans);font-size:15px;color:var(--gris-700)}
+.dest .inst{font-family:var(--sans);font-size:15.5px;font-weight:600}
+.dest details summary{cursor:pointer;font-family:var(--sans);font-size:15px;font-weight:600;width:max-content}
+.dest details p{font-size:16px;margin-top:6px;max-width:80ch;white-space:pre-line}
+.boton{display:inline-block;font-family:var(--sans);font-size:16px;font-weight:600;padding:10px 18px;border:1px solid var(--tinta);background:var(--blanco);text-decoration:none;margin-top:18px}
+.boton:hover{background:var(--amarillo)}
+.siguiente{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;border-top:1px solid var(--gris-200);padding-top:24px;font-family:var(--sans)}
+.siguiente a{text-decoration:none;padding:14px 16px;border:1px solid var(--gris-200);background:var(--blanco);display:grid;gap:2px}
+.siguiente a:hover{background:var(--amarillo-claro)}
+.siguiente small{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gris-500);font-weight:600}
+.siguiente .der{text-align:right}
+@media (max-width:640px){ .siguiente{grid-template-columns:1fr} .siguiente .der{text-align:left} }
+</style>
+
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabezote"><div class="in">
+<a class="marca" href="../index.html"><img class="marca-logo" src="../logo-led.png" alt="Laboratorio Educativo Digital, Universidad de los Andes" width="115" height="44"><span class="marca-t">AAC&amp;U 2026 · IA y educación superior</span></a>
+<nav class="menu" aria-label="Secciones"><a href="../index.html">Inicio</a><a href="../dimensiones.html">Dimensiones</a><a href="../areas/index.html" class="on" aria-current="page">Áreas</a><a href="../sesiones.html">Sesiones</a><a href="../recursos.html">Recursos</a></nav>
+</div></header>
+<div class="heroe corto"><div class="in"><div><div class="miga"><a href="../index.html">Inicio</a> / <a href="../areas/index.html">Áreas</a> / Decanatura de Estudiantes</div><span class="capa">Capa 2 · Lectura de 5 minutos</span><span class="etq">Ficha por área</span>
+<h1>Decanatura de Estudiantes</h1><p class="lead">La Decanatura es la ventaja humana frente a una IA disponible a las 3 de la mañana. El uso indebido de la IA es tanto un tema de bienestar y carga como de integridad. Cualquier agente de acompañamiento crea riesgos de privacidad y legales que conviene resolver antes de lanzarlo.</p></div></div></div>
+<main id="contenido">
+<section class="in"><div class="ficha">
+<div class="bloque"><span class="etq">Qué vimos</span><ul><li>Los estudiantes no quieren que la IA piense por ellos. Valoran a los profesores que exploran con ellos, y un curso que pedía declarar dónde se usó IA les bajó la ansiedad (Georgia State University, Emory University, Berry College).</li><li>Cerca de 1 de cada 10 estudiantes reporta un vínculo emocional con chatbots, y los «mentorbots» empiezan a competir con los consejeros (plenarias de AAC&amp;U).</li><li>El mal uso de IA aparece con la presión de tiempo, la carga y la falta de confianza. Los detectores producen falsos positivos que afectan más a quienes escriben en una segunda lengua o tienen alguna discapacidad (Kansas State University, Louisiana State University).</li><li>Estudiantes como líderes: becas para estudiantes que facilitan talleres entre pares, y campeones estudiantiles de IA (Elon University, Juniata College).</li></ul></div>
+<div class="bloque"><span class="etq">Por qué le importa al área</span><p>La Decanatura es la ventaja humana frente a una IA disponible a las 3 de la mañana. El uso indebido de la IA es tanto un tema de bienestar y carga como de integridad. Cualquier agente de acompañamiento crea riesgos de privacidad y legales que conviene resolver antes de lanzarlo.</p>
+<div class="nota"><h4>Recomendaciones</h4><ol><li>Crear un programa de estudiantes líderes en IA: cohortes pequeñas con estipendio que acompañen a sus pares, en alianza con LED y DIDACTA.</li><li>Antes de usar cualquier agente de bienestar o de alertas tempranas, definir qué datos lee, cuándo interviene una persona y qué queda registrado.</li><li>No usar puntajes de detectores como prueba en procesos disciplinarios, y atender los detonantes del mal uso: carga, presión y ansiedad.</li></ol></div></div></div></section>
+<section class="in"><div class="cab-sec"><span class="etq">Para ir más a fondo</span><h2>Sesiones destacadas para Decanatura de Estudiantes</h2><p>Una selección de 10 de las 54 sesiones relacionadas con esta área. Se priorizan las que tienen materiales publicados por sus ponentes.</p></div>
+<div class="destacadas"><div class="dest"><h4>Twice Disrupted: Understanding and Serving the Class of 2030</h4><div class="info">Miércoles 28 de octubre · 12:30 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">The City University of New York, LaGuardia Community College · Connecticut College</div><details><summary>Descripción</summary><p>This interactive, hands-on workshop explores how institutions can assess and strengthen their readiness to serve a student cohort uniquely shaped by COVID-19 and generative AI. Participants will consider both the risks of under-preparation and the opportunities created by intentional, coordinated responses. Drawing on current insights into generational disruption and student development, the workshop examines the evolving landscape of student needs, including belonging, academic resilience and integrity, and digital fluency, with a focus on cross-functional strategies that support institutional retention and completion goals. 
+ Participants will explore how campus roles—including faculty, advisors, student affairs professionals, and administrators—can be leveraged in alignment with shared institutional priorities to support student success and persistence. Through guided discussions and applied examples, participants will develop concrete, actionable strategies for building campus-wide readiness that strengthens student outcomes, enhances cross-functional collaboration, and responds to shifting enrollment realities. Digital Devices are required - tablets and laptops preferred.</p></details></div><div class="dest"><h4>Leveraging AI and Analytics for Student Success: From Early Alert Language Analysis to LLM-Based Assessment at a Small Liberal Arts College</h4><div class="info">Miércoles 28 de octubre · 5:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Ursinus College</div><details><summary>Descripción</summary><p>This panel examines the use of AI at Ursinus College, a small liberal arts institution, in student success, retention, and engagement. A data and assessment specialist, computing and AI faculty member, undergraduate student and AI developer, the associate director of the Institute for Student Success (ISS), and the associate dean for Student Success have partnered to develop AI-enabled tools to identify at-risk students. We address emerging questions of AI in teaching and learning, including whether tutoring frequency correlates with improved course grades, whether students who engage with ISS support show measurably different outcomes, and whether language and tone in early alert messaging predict student responsiveness and performance improvement. The panel will discuss its rubric-driven, open-source LLM pipeline to anonymize and evaluate student data throughout our core curriculum. Using natural language processing, we analyze the language of our early alerts to identify which framings lead to greater student engagement, and which language markers correlate with lower final grades, status changes, or withdrawal. Panelists will present findings from an active research agenda, share the technical infrastructure, and facilitate discussion about the ethical, pedagogical, and institutional considerations of deploying AI for predictive interventions and authentic assessment, with an aim toward seeding collaborative academic assessment research at peer institutions.</p></details></div><div class="dest"><h4>Realigning Dislocations Caused by AI amongst Key Stakeholders in Higher Education Using a Collaborative Framework and Emerging Access Technologies</h4><div class="info">Miércoles 28 de octubre · 5:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Simmons University · The College of the Holy Cross, Retired · HGSE Ret</div><details><summary>Descripción</summary><p>This session will focus on how AI has affected and may continue to impact the traditional roles of different stakeholders in higher education: students, faculty, administrators serving students, senior administrators, and parents. The session will highlight the impacts of AI on students with disabilities, at-risk students, and students with unique learning profiles. More than 20 percent of undergraduate students identify as having a disability and many additional students have not self-identified their disability. A SWOT (strengths, weaknesses, opportunities, and threats) analysis for these stakeholders will point to potential areas of conflict and of cooperation. The Collaborative Framework, developed by the presenters, will be used to analyze a case study, illustrating how AI can be used as a partner in facilitating productive collaboration amongst potentially conflicting agendas. Current strategies for the integration of AI across campuses will be described that are being used in several institutions that prioritize ethical use of AI, appropriate confidentiality and guardrails, and use of AI that prevents deskilling, cognitive offloading, and desocialization. 20 minutes will be allocated for questions and discussion.</p></details></div><div class="dest"><h4>Alma Mater Again? Reclaiming Student Formation and Flourishing in the Age of AI</h4><div class="info">Jueves 29 de octubre · 8:15 AM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Harvard University / Noesis Collaborative · Lumina Foundation · Noēsis Collaborative · Permanent</div><details><summary>Descripción</summary><p>AI is rapidly reshaping higher education. Students now use AI on many assignments, while receiving little principled guidance: faculty scramble to adapt; the instrumental promise of a degree as job preparation feels increasingly fragile in a volatile and AI-unsettled labor market. At the same time, record numbers of young adults feel personally adrift, reporting a vacuum of meaning, purpose, and belonging. 
+ This session asks whether higher education can recover its role as alma mater, or “nurturing mother” in our moment: helping to shape brave, creative, confident, wise human beings, not just turnkey employees. Drawing on work in virtue ethics, human flourishing, care ethics, and civic agency, we will ask how colleges and universities can integrate moral, civic, and existential development with preparation for creative, AI-augmented work. Some guiding questions: What uniquely human capacities should our pedagogies now prioritize? How can we design learning environments where AI supports, rather than replaces, students’ development of judgment, character, and relational skills? 
+ Change is happening at a rapid pace, and this session offers attendees a moment to slow down, ground themselves in their institution’s mission now and tomorrow, and to engage in sensemaking with their peers. Currently, higher education leaders have very few opportunities to do this, and we believe that AAC&amp;U is a natural host for this kind of learning and engagement.</p></details></div><div class="dest"><h4>Human-Centered AI: Leveraging Artificial Intelligence to Advance Social-Emotional Learning for Marginalized Students</h4><div class="info">Jueves 29 de octubre · 8:15 AM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Georgia State University</div><details><summary>Descripción</summary><p>As artificial intelligence continues to make its way into higher education, the question is no longer if we will use it—but how we will use it in ways that truly support our students. In community college spaces, where many of our students are navigating work, family, and systemic barriers, the need for connection, care, and belonging remains critical. 
+ This session explores how we can use AI as a tool to strengthen Social-Emotional Learning (SEL), not replace it. With a focus on marginalized and parenting students, we will look at practical ways AI can support self-management, communication, decision-making, and student engagement through advising, student support services, and cocurricular experiences. 
+ Grounded in real practice, this session will offer simple, actionable strategies that can be implemented right away. The goal is to help educators and leaders think differently about AI—not just as a tool for efficiency, but as a way to extend care, deepen connection, and support persistence at scale.</p></details></div><div class="dest"><h4>Bringing Students into the AI Conversation: Peer Dialogue, Formation, and Cross-Unit Partnership</h4><div class="info">Jueves 29 de octubre · 11:00 AM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Boston College</div><details><summary>Descripción</summary><p>What do students actually think about AI, and how do we create honest space for those conversations? This session shares two connected programs from Boston College that reflect its mission as a Jesuit Catholic institution that grew from a simple question: what if we treated AI as a formation question rather than primarily a policy or integrity issue? 
+ The first program, a summer research internship, trained undergraduates in IRB-approved qualitative methods to interview peers about their lived experiences with AI. Students described pressure to use AI to keep up academically, anxiety about losing their own thinking and writing skills, and confusion from inconsistent faculty policies. Crucially, they reported that honest conversation about AI almost never happens. 
+ The second program, BC Students Talk AI, built directly on those findings. Students signed up to host small-group conversations with friends, picked up pizza and facilitation materials, and completed reflections. The design was intentionally light: no expert facilitator, no approved messaging. Just structured peer dialogue, with a short survey to participants afterward to gather additional research (also IRB approved). 
+ The partnership made it possible: Student Affairs contributed the pizza discussion format, the Purpose Lab contributed qualitative research expertise, and Center for Digital Innovation in Learning (CDIL) contributed learning design . No single unit could have built it alone.</p></details></div><div class="dest"><h4>Meet Ed GPT: Introducing AI as a Thoughtful Advising Partner</h4><div class="info">Jueves 29 de octubre · 4:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Empire State University</div><details><summary>Descripción</summary><p>Advising students at SUNY Empire State University depends on human connection and professional judgment . Advising demands are rising as enrollment grows and educational programs and certification pathways become more complex . Human advisors alone are increasingly strained in meeting the demands of supporting students with consistency and efficiency. 
+ This session presents a prototype AI Co-Advisor (custom GPT) for the College of Education that improves policy-aligned consistency, accelerates responses to advising and mentoring questions, and reduces cognitive load while keeping mentors in command . It is trained on the College of Education knowledge base, including structured program requirements for the BS in Early Childhood Education; individualized degree guidelines for associate’s and bachelor’s programs in Educational Studies; FERPA regulations; CPL policies; General Education frameworks; and Registrar protocols. 
+ Attendees will become acquainted with a toolkit model designed to enhance and enrich the human advising program and function as an institutional resource . The session will include a brief demonstration of the AI Co-Advisor in practice, highlighting real advising scenarios and decision-support workflows . Participants will have the opportunity to assess their own program potential for custom GPT advising developments, with attention to ethical considerations, transparency, and maintaining the central role of human advisors.</p></details></div><div class="dest"><h4>The Middle Ground: Navigating the Impact of Generative AI on Peer Educators</h4><div class="info">Jueves 29 de octubre · 4:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Macalester College · Macalester College | Indeed Inc.</div><details><summary>Descripción</summary><p>While discourse on generative AI (GenAI) in higher education focuses heavily on faculty and institutional policy, undergraduate tutors and teaching assistants (TAs) occupy a unique, often overlooked position. As &quot;near-peers,&quot; these student leaders are frontline responders who must balance their roles as mentors with the complexities of evolving academic integrity standards. This session shifts the focus to these student-workers: How do they navigate the ethical gray zones of GenAI? What role do they play in encouraging best practices? Most importantly, how can institutions protect the labor and emotional well-being of peer educators when a client presents AI-generated work? 
+ This interactive discussion provides a venue for sharing institutional strategies and clarifying the boundaries of peer support. We begin with a collaborative warm-up to gauge campus climates, followed by three case studies exploring common friction points. We will then present two specific documents developed on our campus to define student-staff roles vis-à-vis AI policies. Participants will spend time in small groups comparing their own campus landscapes, followed by a report-back session to synthesize ideas. Attendees will leave with practical frameworks to ensure student-staff are not left to navigate this technological revolution without a road map.</p></details></div><div class="dest"><h4>From Device‑Literate to Computer‑Ready: Designing a Digital Essentials Program That Bridges Incoming Student Skill Gaps</h4><div class="info">Jueves 29 de octubre · 5:00 PM · 1 material (solicite acceso a SharePoint)</div>
+<div class="inst">Providence College</div><details><summary>Descripción</summary><p>Incoming college students are often described as “ tech ‑ savvy ,” yet many arrive with limited foundational computer literacy. While they are fluent with smartphones, apps, and Chromebooks, they frequently struggle with file management, cloud storage, productivity software, and the digital workflows required for academic and professional success. This gap creates unnecessary friction for students and consumes valuable instructional time for faculty. 
+ This session introduces Providence College’s Digital Essentials Program, a scalable, modular initiative designed to bridge these gaps early by moving students from device familiarity to true computer and digital fluency. Developed in direct response to faculty ‑ identified challenges, the program addresses core competencies such as file organization, cloud collaboration, Microsoft 365 proficiency , responsible AI use, cybersecurity fundamentals, and digital preparedness for business coursework. Delivered through structured, self ‑ paced modules embedded in Canvas , Digital Essentials frees up class time, reduces student stress, and establishes a shared baseline of digital competence across courses. 
+ Participants will leave with a replicable framework—including curriculum structure, integration strategies, and implementation lessons—that can be adapted for incoming students at peer institutions.</p></details></div><div class="dest"><h4>Think Before You Submit: Academic Integrity When AI Is Available</h4><div class="info">Viernes 30 de octubre · 9:00 AM · 2 materiales (solicite acceso a SharePoint)</div>
+<div class="inst">Rutgers, The State University of New Jersey</div><details><summary>Descripción</summary><p>It is 11:48 p.m., and you are trying to meet a midnight deadline when you hit writer’s block. An AI tool, like ChatGPT, could help you brainstorm ideas or write the whole thing. Where’s the line between acceptable and inappropriate use of AI? 
+ Academic integrity has always been crucial to college success, but the proliferation of AI tools is forcing us to reimagine what honest academic work looks like, even when no one is watching. Faculty and administrators may assume students understand the policies, but practice often reveals gaps. Rather than focusing solely on detection, this session explores how educators can teach integrity as a shared, evolving practice in today’s tech-focused world. 
+ This session draws directly from a spring 2026 course on academic integrity and AI. Students’ responses obtained throughout this course revealed gaps between institutional policy language and real-time decision-making, particularly regarding authorship, collaboration, and AI use. Rather than focusing on surveillance as an integral part of learning, I’ll explore how assignment design, communication, and policy development can move academic integrity beyond policing toward shared practice.</p></details></div></div>
+<a class="boton" href="../sesiones.html?area=decanatura">Ver las 54 sesiones relacionadas con Decanatura de Estudiantes</a>
+<div class="nota gris" style="border-left-color:var(--gris-500);background:var(--gris-100)"><p>¿Quiere el panorama general? Lea el <a href="../index.html">resumen de 2 minutos</a> o <a href="../dimensiones.html">las cuatro dimensiones</a>.</p></div>
+<nav class="siguiente" aria-label="Continuar leyendo"><a href="index.html"><small>Anterior</small>Todas las áreas</a><a class="der" href="continua.html"><small>Siguiente</small>Educación Continua</a></nav></section></main>
+<footer class="pie"><div class="in">
+<div><h2>2026 AAC&amp;U Conference on AI and Higher Education</h2><p>Síntesis del Laboratorio Educativo Digital (LED). Vicerrectoría Académica, Universidad de los Andes. Preparada con apoyo de Claude.</p></div>
+<div><span class="etq">Secciones</span><ul><li><a href="../index.html">Inicio</a></li><li><a href="../dimensiones.html">Dimensiones</a></li><li><a href="../areas/index.html">Áreas</a></li><li><a href="../sesiones.html">Sesiones</a></li><li><a href="../recursos.html">Recursos</a></li></ul></div>
+<div><span class="etq">Actualización</span><p>Contenido con corte al 10 de noviembre de 2026. Incluye los materiales publicados por los ponentes después de la conferencia.</p></div>
+</div></footer>
+
+</body>
+</html>
