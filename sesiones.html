@@ -300,7 +300,7 @@ function card(s){
     ${s.inst.length?`<div class="inst">${esc(s.inst.join(' · '))}</div>`:''}
     ${s.par?`<div class="info">Parte de: ${esc(s.par)}</div>`:''}
     ${(dims||pubs||cur||fmt)?`<div class="tags">${dims}${pubs}${cur}${fmt}</div>`:''}
-    ${s.nf?`<div class="lnk">Materiales disponibles: solicite acceso a SharePoint.</div>`:''}
+    ${s.nf?`<div class="lnk">Materiales disponibles para la comunidad Uniandes: <a href="https://bit.ly/AACUAI2026-Uniandes" target="_blank" rel="noopener">ver materiales</a></div>`:''}
     ${s.desc?`<details><summary>Descripción</summary><p>${esc(s.desc)}</p></details>`:''}
   </article>`;
 }
